@@ -1,0 +1,55 @@
+.cvp-clearfix {
+  &:after,
+  &:before {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+.cvp-text-left {
+  text-align: left;
+}
+
+.cvp-text-right {
+  text-align: right;
+}
+
+.cvp-text-center {
+  text-align: center;
+}
+
+.cvp-v-middle {
+  vertical-align: middle;
+}
+
+.cvp-text-overflow {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  .cell {
+    white-space: nowrap;
+  }
+}
+
+.cvp-width-50 {
+  width: 50px;
+}
+
+.cvp-padding-right-50 {
+  padding-right: 50px !important;
+}
+
+.cvp-block {
+  display: block;
+}
+
+.cvp-width-full {
+  width: 100%;
+}
+
+.cvp-transition(@property: all, @time: .3s, @type: ease) {
+  transition: @property @time @type;
+}
