@@ -78,4 +78,14 @@ export default [
       },
     ],
   },
+    {
+      path: '/tokens',
+        data:
+            {
+                token: 'test',
+                user: {
+                  name: 'yili'
+                }
+            }
+    }
 ];
